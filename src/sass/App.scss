@@ -1,0 +1,50 @@
+$colorRegular: #565458;
+$colorsSale: rgb(174, 26, 26);
+$colorsSale: rgb(117, 210, 10);
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("/dist/assets/GT-Eesti.woff") format('woff');
+}
+
+body {
+  font-family: "GT-Eesti", Arial;
+  color: $colorRegular;
+
+  text-align: center;
+
+  #container {
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin: 0.5em 0;
+  }
+}
+
+html * {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  padding: 6px 0;
+  font-weight: normal;
+}
+
+#error {
+  color: rgb(241, 4, 4);
+}
+
+h2 {
+  background-color: rgba($colorsSale, 0.8);
+  color: white;
+}
+
+h3 {
+  width: 363px;
+}
+
+@import 'SmallView';
+@import 'LargeView';
+@import 'Responsive';

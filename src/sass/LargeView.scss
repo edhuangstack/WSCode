@@ -1,0 +1,84 @@
+// Non-scrolling Lightbox
+#container {
+  position: relative;
+  width: 100%;
+
+  img#hero{
+    display: block;
+  }
+
+  #lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(black, 0.90);
+    text-align: center;
+
+    #largeProduct {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(white, 1.0);
+
+      padding: 1em;
+    }
+
+    #buttonExit {
+      cursor: pointer;
+      font-family: Verdana;
+      font-size: 36px;
+      font-weight: bold;
+      position: absolute;
+      right: -6px;
+      top: -48px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+#buttonNext, #buttonPrev {
+  display: table-cell;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 33%;
+  height: 50%;
+  cursor: pointer;
+
+  vertical-align: center;
+
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    min-height: 50px;
+  }
+}
+
+a#buttonNext, a#buttonNext img {
+  right: 0;
+}
+
+a#buttonPrev, a#buttonPrev img {
+  left: 0;
+}
+
+#carousel {
+  text-align: center;
+  padding-top: 10px;
+
+  img {
+    margin: 2px 2px 0 2px;
+    display: inline-block;
+    width: 30px;
+    opacity: 0.33;
+    cursor: pointer;
+  }
+
+  img.current {
+    opacity: 1;
+  }
+}

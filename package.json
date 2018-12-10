@@ -1,0 +1,29 @@
+{
+  "name": "w2018",
+  "version": "1.0.0",
+  "author": "Ed Huang",
+  "private": true,
+  "scripts": {
+    "serve": "webpack-dev-server --mode development --open --openPage entry --port 3000",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "jest": "^23.6.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "markdown-pdf": "^9.0.0"
+  }
+}
